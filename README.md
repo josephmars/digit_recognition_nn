@@ -4,7 +4,7 @@
 This project implements a neural network from scratch to recognize handwritten digits (0-9). Utilizing a dataset comprising 1,797 instances from 43 writers, the model processes normalized 32x32 bitmap images of handwritten digits to achieve high classification accuracy.
 
 <p align="center">
-    <img src="https://figures.semanticscholar.org/66d26cd9cc5205517f31a3fe35220cbbd0066ed9/4-Figure4-1.png" alt="Handwritten Digits" width="600"/>  
+    <img src="plots/nn.png" alt="Handwritten Digits" width="600"/>  
     <br>
     <em>Figure 1: Handwritten digits and neural network architecture.</em>
 </p>
@@ -71,15 +71,18 @@ python src/main.py
 ### Data Split
 The dataset was split into training, validation, and testing sets using the proportions of 70%, 15%, and 15% respectively. A fixed random seed was set to ensure reproducibility. Additionally, one-hot encoding was applied to represent the multilabel `y` into a set of 10 binary values.
 
+
 | Split      | Size | Proportion |
-|------------|------|------------|
+|------------|:----:|:----------:|
 | Training   | 1257 | 70%        |
 | Validation | 270  | 15%        |
 | Testing    | 270  | 15%        |
 
 *Table 1: Details of the datasets.*
 
+
 ### Model Training and Evaluation
+
 
 The neural network was trained for 300 epochs. The training and evaluation loss curves are depicted in **Figure 1**.
 
